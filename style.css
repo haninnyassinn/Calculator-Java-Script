@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;        
+    height: 100vh;              
+}
+
+
+.grey {
+    background-color: grey;
+    width: 30%;
+    height: 65%;
+    border-radius: 10px;   
+    justify-content: space-between;
+    display: grid;    
+    padding: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90px repeat(4, 1fr);
+    gap: 5px;
+    padding: 70px;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: green;
+    border-radius: 10px;
+    height: 10px;
+        height: 40px;
+    width: 40px;
+    margin-top: 13px;
+   margin-left: 25px;
+    
+}
+
+.del, .cal{
+    background-color: red;
+        border-radius: 10px;
+     height: 40px;
+    width: 40px;
+    margin-top: 13px;
+     margin-left: 25px;
+
+}
+
+.cal{
+    grid-column: 3;
+    grid-row: 5;}
+
+.del{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.grey .screen{
+    width: 100%;
+    height: 80px;
+    background-color: blueviolet;
+    grid-column: span 4;
+        margin-bottom: 10px;
+        font-size: 20pt;
+        overflow: hidden;
+}
+
+.add, .sub, .divide{
+    background-color: burlywood;
+        border-radius: 10px;
+     height: 40px;
+    width: 40px;
+    margin-top: 13px;
+     margin-left: 25px;
+     grid-column: 4;
+}
+
+.add { grid-row: 2; }
+
+.sub { grid-row: 3; }
+
+.divide { grid-row: 4; }
+
+.btn-zero {
+    grid-column: 1;
+    background-color: green;
+    border-radius: 10px;
+    height: 10px;
+        height: 40px;
+    width: 40px;
+    margin-top: 13px;
+   margin-left: 25px;
+    
+}
